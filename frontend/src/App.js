@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { useAuthContext } from './hooks/useAuthContext';
-import axios from 'axios'
 
 //pages & components
 import Home from './pages/home'
@@ -11,7 +10,6 @@ import Signup from './pages/signup';
 
 function App() {
   const { user } = useAuthContext()
-  axios.post('workout-app-gamma-pearl.vercel.app')
   return (
     <div className="App">
       <BrowserRouter>
